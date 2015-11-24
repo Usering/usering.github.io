@@ -13,10 +13,26 @@
 html,body {
 	margin:0px;
 	padding:0px;
-	height:100%;
 	width:100%;
 	background-color: #FFEBEE;
 	font-family: 'Slabo 27px', serif;
+}
+
+div.content {
+	height:Calc(100% - 200px);
+	width:100%;
+	top:0;
+	margin-top:135px;
+}
+
+#home {
+	background-color: red;
+	height:100%;
+}
+
+#extensions {
+	background-color: blue;
+	height:100%;
 }
 
 div.centered {
@@ -26,6 +42,11 @@ div.centered {
 
 div.header {
 	width:100%;
+	position:fixed;
+	height:115px;
+	top:0px;
+	padding-top:15px;
+	background-color: #FFEBEE;
 }
 
 div.header img {
@@ -48,7 +69,6 @@ div.header h1 {
 	top:0px;
 	display:block;
 	bottom:0px;
-	margin-top:calc(5% + 15px);
 }
 
 div.header nav a {

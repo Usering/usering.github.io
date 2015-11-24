@@ -4,6 +4,33 @@
 		<link rel="stylesheet" type="text/css" href="index.css">
 		<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				function loop(selector,callback){
+					$(selector).each(function(index){
+						var object = $(selector).eq(index)
+						if (object) {
+							callback(object)
+						}
+					})
+				}
+
+				loop("a.nav-button",function(button){
+					if (!(button.attr("href") == "#home")) {
+						$(button.attr("href")).hide()
+						button.removeAttr("id","current")
+					}
+					button.click(function(){
+						loop("a.nav-button",function(object){
+							$(object.attr("href")).hide()
+							object.removeAttr("id","current")
+						})
+						$(button.attr("href")).show()
+						button.attr("id","current")
+					})
+				})
+			})
+		</script>
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 	</head>
 	<body>
@@ -12,9 +39,17 @@
 				<img src="title.png">
 				<h1>Usering</h1>
 				<nav>
-					<a id="current" href="index.html">Home</a>
-					<a href="extensions.html">Chrome Extensions</a>
+					<a class="nav-button" id="current" href="#home">Home</a>
+					<a class="nav-button" href="#extensions">Chrome Extensions</a>
 				</nav>
+			</div>
+			<div class="content">
+				<div id="home">
+					
+				</div>
+				<div id="extensions">
+
+				</div>
 			</div>
 		</div>
 	</body>
