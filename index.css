@@ -1,0 +1,54 @@
+/*
+	Background Color: 
+		Color: #FFEBEE
+		Alpha: 50
+	Header:
+		Color: #F44336
+		Alpha: 500
+	Call To Action:
+		Color: #E53935;
+		Alpha: 600;
+*/
+
+html,body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+	width:100%;
+	background-color: #FFEBEE;
+	font-family: 'Slabo 27px', serif;
+}
+
+div.centered {
+	width: 90%;
+	margin-left:5%;
+}
+
+div.header {
+	width:100%;
+}
+
+div.header img {
+	display:inline-block;
+	float:left;
+	margin-top:5%;
+	margin-right:2%;
+	width:100px;
+	height:auto;
+}
+
+div.header nav {
+	display:inline-block;
+	position:relative;
+	margin-top:calc(5% + 15px);
+}
+
+div.header nav a {
+	margin-right:5px;
+	color:white;
+	background-color:black;
+	border-radius: 5px;
+	padding:2px;
+	padding-right:4px;
+	padding-left:4px;
+}
