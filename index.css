@@ -31,24 +31,37 @@ div.header {
 div.header img {
 	display:inline-block;
 	float:left;
-	margin-top:5%;
+	vertical-align: top;
 	margin-right:2%;
 	width:100px;
 	height:auto;
 }
 
 div.header nav {
+	margin-top:-15px;
 	display:inline-block;
 	position:relative;
+}
+
+div.header h1 {
+	position:relative;
+	top:0px;
+	display:block;
+	bottom:0px;
 	margin-top:calc(5% + 15px);
 }
 
 div.header nav a {
+	text-decoration: none;
 	margin-right:5px;
 	color:white;
-	background-color:black;
+	background-color:rgb(123, 123, 123);
 	border-radius: 5px;
 	padding:2px;
 	padding-right:4px;
 	padding-left:4px;
+}
+
+div.header nav a#current {
+	background-color: rgb(81,81,81);
 }
