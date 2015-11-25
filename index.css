@@ -25,14 +25,13 @@ div.content {
 	margin-top:135px;
 }
 
-#home {
-	background-color: red;
-	height:100%;
+div.data {
+
 }
 
-#extensions {
-	background-color: blue;
-	height:100%;
+h1.centered {
+	text-align: center;
+	font-size: 25pt;
 }
 
 div.centered {
@@ -58,10 +57,27 @@ div.header img {
 	height:auto;
 }
 
+div#social {
+	width:120px;
+	height:30px;
+	margin-left: calc(50% - 60px);
+}
+
+img.social {
+	width: 30px;
+	height:auto;
+}
+
+img.social:hover {
+	-webkit-filter:saturate(20%);
+	transition:-webkit-filter .3s linear;
+}
+
 div.header nav {
 	margin-top:-15px;
 	display:inline-block;
 	position:relative;
+	float:left;
 }
 
 div.header h1 {
